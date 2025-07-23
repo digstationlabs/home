@@ -28,6 +28,13 @@ class WebsiteStack extends Stack {
             bucketName: `digstationlabs-home-${environment}-logs`,
             removalPolicy: RemovalPolicy.RETAIN,
             encryption: s3.BucketEncryption.S3_MANAGED,
+            objectOwnership: s3.ObjectOwnership.BUCKET_OWNER_PREFERRED,
+            blockPublicAccess: new s3.BlockPublicAccess({
+                blockPublicAcls: false,
+                blockPublicPolicy: true,
+                ignorePublicAcls: false,
+                restrictPublicBuckets: true,
+            }),
             lifecycleRules: [{
                 expiration: Duration.days(90),
             }],
