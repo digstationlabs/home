@@ -1,0 +1,22 @@
+{
+  "name": "digstationlabs-home",
+  "version": "1.0.0",
+  "description": "Home page for Dig Station Labs",
+  "private": true,
+  "scripts": {
+    "dev": "live-server --port=8080 --entry-file=index.html",
+    "start": "npm run dev",
+    "install-infra": "cd infrastructure && npm install",
+    "deploy": "cd infrastructure && npm run deploy-prod",
+    "deploy-dev": "cd infrastructure && npm run deploy-dev"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digstationlabs/home.git"
+  },
+  "author": "Dig Station Labs",
+  "license": "UNLICENSED"
+}
