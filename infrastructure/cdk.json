@@ -33,12 +33,14 @@
       "prod": {
         "domainName": "digstationlabs.com",
         "certificateArn": "arn:aws:acm:us-east-1:529370324189:certificate/36622163-572c-4c43-a4b3-05dbafc7fc7e",
-        "hostedZoneId": "digstationlabs.com"
+        "hostedZoneId": "PENDING_ZONE_ID",
+        "hostedZoneName": "digstationlabs.com"
       },
       "dev": {
         "domainName": "dev.digstationlabs.com",
         "certificateArn": "arn:aws:acm:us-east-1:529370324189:certificate/36622163-572c-4c43-a4b3-05dbafc7fc7e",
-        "hostedZoneId": "digstationlabs.com"
+        "hostedZoneId": "PENDING_ZONE_ID",
+        "hostedZoneName": "digstationlabs.com"
       }
     }
   }

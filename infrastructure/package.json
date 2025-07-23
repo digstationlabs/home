@@ -5,18 +5,18 @@
   "main": "bin/app.js",
   "scripts": {
     "deploy": "cdk deploy --all",
-    "deploy-prod": "cdk deploy --all -c environment=prod --profile digstationlabs",
-    "deploy-dev": "cdk deploy --all -c environment=dev --profile digstationlabs",
+    "deploy-prod": "cdk deploy --all -c environment=prod",
+    "deploy-dev": "cdk deploy --all -c environment=dev",
     "diff": "cdk diff",
     "synth": "cdk synth",
-    "bootstrap": "cdk bootstrap --profile digstationlabs"
+    "bootstrap": "cdk bootstrap"
   },
   "devDependencies": {
-    "aws-cdk": "^2.x"
+    "aws-cdk": "^2.150.0"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.x",
-    "constructs": "^10.x"
+    "aws-cdk-lib": "^2.150.0",
+    "constructs": "^10.0.0"
   },
   "author": "Digstation Labs",
   "license": "UNLICENSED"

@@ -12,7 +12,7 @@ class WebsiteStack extends Stack {
     constructor(scope, id, props) {
         super(scope, id, props);
 
-        const { environment, domainName, certificateArn, hostedZoneId } = props;
+        const { environment, domainName, certificateArn, hostedZoneId, hostedZoneName } = props;
 
         // Create S3 bucket for website content
         const contentBucket = new s3.Bucket(this, 'ContentBucket', {
@@ -116,9 +116,9 @@ class WebsiteStack extends Stack {
         });
 
         // Create Route53 records if domain is configured
-        if (domainName && hostedZoneId && certificate) {
+        if (domainName && hostedZoneId && hostedZoneId !== 'PENDING_ZONE_ID' && certificate) {
             const zone = route53.HostedZone.fromHostedZoneAttributes(this, 'Zone', {
-                zoneName: hostedZoneId,
+                zoneName: hostedZoneName || domainName,
                 hostedZoneId: hostedZoneId,
             });
 
