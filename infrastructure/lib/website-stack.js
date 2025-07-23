@@ -75,7 +75,7 @@ class WebsiteStack extends Stack {
         // Create CloudFront distribution
         const distribution = new cloudfront.Distribution(this, 'Distribution', {
             defaultRootObject: 'index.html',
-            domainNames: certificate ? [domainName, `www.${domainName}`] : undefined,
+            domainNames: certificate && domainName ? [domainName, `www.${domainName}`] : undefined,
             certificate,
             minimumProtocolVersion: cloudfront.SecurityPolicyProtocol.TLS_V1_2_2021,
             defaultBehavior: {
