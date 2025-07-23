@@ -106,15 +106,23 @@ class WebsiteStack extends Stack {
         new s3deploy.BucketDeployment(this, 'DeployWebsite', {
             sources: [s3deploy.Source.asset(path.join(__dirname, '../../'), {
                 exclude: [
+                    'node_modules',
                     'node_modules/**',
+                    '**/node_modules/**',
+                    'infrastructure',
                     'infrastructure/**',
+                    '.git',
                     '.git/**',
+                    '.github',
                     '.github/**',
                     '*.log',
                     '.DS_Store',
+                    'package.json',
                     'package-lock.json',
                     'CLAUDE.md',
                     '.gitignore',
+                    'scripts',
+                    'scripts/**',
                 ],
             })],
             destinationBucket: contentBucket,
