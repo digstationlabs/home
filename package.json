@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "live-server --port=8080 --entry-file=index.html",
     "start": "npm run dev",
-    "install-infra": "cd infrastructure && npm install",
-    "deploy": "cd infrastructure && npm run deploy-prod",
-    "deploy-dev": "cd infrastructure && npm run deploy-dev"
+    "install-infra": "npm --prefix infrastructure install",
+    "deploy": "npm --prefix infrastructure run deploy-prod",
+    "deploy-dev": "npm --prefix infrastructure run deploy-dev"
   },
   "devDependencies": {
     "live-server": "^1.2.2"
