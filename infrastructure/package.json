@@ -1,0 +1,23 @@
+{
+  "name": "digstationlabs-home-infrastructure",
+  "version": "1.0.0",
+  "description": "AWS CDK infrastructure for Digstation Labs home page",
+  "main": "bin/app.js",
+  "scripts": {
+    "deploy": "cdk deploy --all",
+    "deploy-prod": "cdk deploy --all -c environment=prod --profile digstationlabs",
+    "deploy-dev": "cdk deploy --all -c environment=dev --profile digstationlabs",
+    "diff": "cdk diff",
+    "synth": "cdk synth",
+    "bootstrap": "cdk bootstrap --profile digstationlabs"
+  },
+  "devDependencies": {
+    "aws-cdk": "^2.x"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.x",
+    "constructs": "^10.x"
+  },
+  "author": "Digstation Labs",
+  "license": "UNLICENSED"
+}

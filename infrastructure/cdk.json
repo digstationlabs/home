@@ -1,0 +1,45 @@
+{
+  "app": "node bin/app.js",
+  "watch": {
+    "include": [
+      "**"
+    ],
+    "exclude": [
+      "README.md",
+      "cdk*.json",
+      "**/*.d.ts",
+      "**/*.js",
+      "tsconfig.json",
+      "package*.json",
+      "yarn.lock",
+      "node_modules",
+      "test"
+    ]
+  },
+  "context": {
+    "@aws-cdk/aws-lambda:recognizeLayerVersion": true,
+    "@aws-cdk/core:checkSecretUsage": true,
+    "@aws-cdk/core:target-partitions": [
+      "aws",
+      "aws-cn"
+    ],
+    "@aws-cdk-containers/ecs-service-extensions:enableDefaultLogDriver": true,
+    "@aws-cdk/aws-ec2:uniqueImdsv2TemplateName": true,
+    "@aws-cdk/core:stackRelativeExports": true,
+    "@aws-cdk/aws-rds:lowercaseDbIdentifier": true,
+    "@aws-cdk/aws-lambda:recognizeVersionProps": true,
+    "@aws-cdk/aws-cloudfront:defaultSecurityPolicyTLSv1.2_2021": true,
+    "environments": {
+      "prod": {
+        "domainName": "digstationlabs.com",
+        "certificateArn": "arn:aws:acm:us-east-1:529370324189:certificate/36622163-572c-4c43-a4b3-05dbafc7fc7e",
+        "hostedZoneId": "digstationlabs.com"
+      },
+      "dev": {
+        "domainName": "dev.digstationlabs.com",
+        "certificateArn": "arn:aws:acm:us-east-1:529370324189:certificate/36622163-572c-4c43-a4b3-05dbafc7fc7e",
+        "hostedZoneId": "digstationlabs.com"
+      }
+    }
+  }
+}
