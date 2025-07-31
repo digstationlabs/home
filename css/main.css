@@ -332,6 +332,29 @@ footer {
     border-top: 1px solid rgba(56, 189, 248, 0.2);
 }
 
+.footer-content p {
+    margin: 0.5rem 0;
+}
+
+.footer-links {
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    color: var(--starlight-white);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color var(--transition-base);
+    opacity: 0.8;
+}
+
+.footer-links a:hover {
+    color: var(--plasma-blue);
+    opacity: 1;
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {
