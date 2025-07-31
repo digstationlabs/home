@@ -1,0 +1,30 @@
+Open Graph Image Requirements for Digstation Labs
+================================================
+
+Dimensions: 1200x630 pixels (recommended by Facebook/LinkedIn)
+Format: PNG or JPG
+File name: og-image.png
+
+Design Specifications:
+---------------------
+1. Background: Deep Space Black (#0D1117) with subtle space/stars texture
+2. Logo/Brand: "DIGSTATION LABS" in Orbitron font, prominent placement
+3. Tagline: "Transforming Data into Intelligence" in Inter font
+4. Visual Elements: 
+   - Include elements from the space station video aesthetic
+   - Plasma Blue (#38BDF8) accents/glow effects
+   - Subtle grid or data visualization elements
+   - Futuristic, technical feel
+
+Content Layout:
+--------------
+- Brand name should be large and readable even at small sizes
+- Include the tagline prominently
+- Consider adding subtle visual elements like:
+  - Circuit patterns
+  - Data flow visualization
+  - Space/cosmic elements
+  - AI/tech iconography
+
+Note: This image will appear when links are shared on social media platforms,
+so it should be visually striking and clearly communicate the brand identity.
