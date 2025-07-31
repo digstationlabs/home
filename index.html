@@ -3,28 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digstation Labs - Digital Innovation</title>
+    <title>Digstation Labs - Transforming Data into Intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <!-- Video Background -->
+    <video autoplay muted loop playsinline class="video-background">
+        <source src="swatches/Ship_and_Planet_Adjustment_ultra_slow.webm" type="video/webm">
+        <!-- Fallback for browsers that don't support WebM -->
+        <source src="swatches/Ship_and_Planet_Adjustment.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+    
     <header>
         <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/services.html">Services</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-            </ul>
+            <div class="nav-container">
+                <div class="brand">
+                    <a href="/">Digstation Labs</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     
     <main>
-        <h1>Welcome to Digstation Labs</h1>
-        <p>Hello World - Home page placeholder</p>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Uncovering Breakthrough AI</h1>
+                <p class="hero-subtitle">We dig deep into complex APIs and data streams to engineer intelligent tools that power your mission.</p>
+                <a href="#services" class="btn btn-primary">Start Your Expedition</a>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <div class="container">
+                <h2>Our Mining Operations</h2>
+                <div class="services-grid">
+                    <div class="card service-card">
+                        <h3>Precision Excavation</h3>
+                        <p>From raw data to refined intelligence. We analyze your digital landscape to find the richest veins of opportunity, then build the custom AI tools you need to capitalize on them.</p>
+                    </div>
+                    <div class="card service-card">
+                        <h3>Interstellar Connections</h3>
+                        <p>The universe of APIs is vast. We create seamless, powerful connections between platforms, building the infrastructure that lets your data and AI flow freely.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Open a Comms Channel</h2>
+                <p>Ready to explore the frontier of AI development? Let's discuss how Digstation Labs can transform your data into intelligence.</p>
+                <a href="/contact.html" class="btn btn-primary">Launch a Project</a>
+            </div>
+        </section>
     </main>
     
     <footer>
-        <p>&copy; 2025 Digstation Labs. All rights reserved.</p>
+        <p>&copy; 2025 Digstation Labs. Transforming Data into Intelligence.</p>
     </footer>
     
     <script src="js/main.js"></script>

@@ -36,3 +36,10 @@ build/
 
 # Claude files
 .claude/
+
+# Media files
+# Exclude everything in swatches except the videos we use
+swatches/*
+# Keep the video files used in the website
+!swatches/Ship_and_Planet_Adjustment_ultra_slow.webm
+!swatches/Ship_and_Planet_Adjustment.mp4

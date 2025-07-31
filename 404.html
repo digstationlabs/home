@@ -3,29 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Page Not Found | Digstation Labs</title>
+    <title>404 - Lost in Space | Digstation Labs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
+    
     <header>
         <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/services.html">Services</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-            </ul>
+            <div class="nav-container">
+                <div class="brand">
+                    <a href="/">Digstation Labs</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     
     <main>
-        <h1>404 - Page Not Found</h1>
-        <p>Sorry, the page you're looking for doesn't exist.</p>
-        <p><a href="/">Return to Home Page</a></p>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 style="font-size: clamp(4rem, 10vw, 8rem); margin-bottom: 1rem;">404</h1>
+                <p class="hero-subtitle">Lost in the Digital Void</p>
+                
+                <div style="margin-top: 2rem;">
+                    <p style="font-size: 1.25rem; margin-bottom: 2rem;">
+                        It seems you've drifted into uncharted space.<br>
+                        The page you're seeking has vanished into the cosmic void.
+                    </p>
+                    
+                    <a href="/" class="btn btn-primary">Return to Base</a>
+                </div>
+                
+                <div style="margin-top: 3rem; opacity: 0.7;">
+                    <p>Error Code: RESOURCE_NOT_FOUND</p>
+                    <p>Coordinates: Unknown</p>
+                </div>
+            </div>
+        </section>
     </main>
     
     <footer>
-        <p>&copy; 2025 Digstation Labs. All rights reserved.</p>
+        <p>&copy; 2025 Digstation Labs. Transforming Data into Intelligence.</p>
     </footer>
     
     <script src="/js/main.js"></script>

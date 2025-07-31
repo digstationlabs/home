@@ -162,4 +162,7 @@ The deployment process is fully automated:
 
 ### Development (Disabled)
 - Currently not deployed to avoid certificate issues
-- Can be enabled once dev.digstationlabs.com certificate is configured
+
+## Project Usage
+
+- This project is on windows, user powershell
