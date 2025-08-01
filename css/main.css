@@ -438,20 +438,6 @@ footer {
     opacity: 0.95;
 }
 
-.ai-partner-section .btn-primary {
-    font-size: 1.125rem;
-    padding: 1rem 2.5rem;
-    background: linear-gradient(135deg, var(--plasma-blue), var(--engine-glow-amber));
-    border: none;
-    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.4);
-    transition: all var(--transition-base);
-}
-
-.ai-partner-section .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 30px rgba(56, 189, 248, 0.6);
-}
-
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
     * {
